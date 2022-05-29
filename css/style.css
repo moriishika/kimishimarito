@@ -210,9 +210,12 @@ footer {
     flex: 100%;
     max-width: 100%;
   }
-
+  
+.gallery-title h2 {
+    font-size: 1.8rem;
+}
   .commission-container h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 25px;
   }
   .commissions {
@@ -229,7 +232,7 @@ footer {
     width: 100%;
   }
   .commission p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .about-me {
@@ -243,6 +246,6 @@ footer {
   }
   footer {
     padding: 30px;
-    font-size: 10px;
+    font-size: 8px;
   }
 }
