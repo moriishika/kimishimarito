@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url("../assets/pexels-eva-elijas-7598077.jpg") rgb(0, 12, 42);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.hor-center {
+  justify-content: center;
+}
+
+.ver-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.glow{
+  filter: drop-shadow(0 0 0.50rem royalblue);
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 50px;
+}
+
+.introduction {
+  margin-top: 20px;
+  padding: 50px;
+  border: solid #f6f3f3 3px;
+}
+
+.no-blend {
+  mix-blend-mode: normal;
+}
+
+.introduction h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.introduction p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  width: 100%;
+}
+
+.gallery {
+  flex: 25%;
+  max-width: 33.3%;
+  padding-right: 10px;
+}
+
+.gallery img {
+  margin-top: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border: solid #f6f3f3 3px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
