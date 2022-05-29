@@ -6,6 +6,24 @@
   box-sizing: border-box;
 }
 
+.gallery-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  width: 1px;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 html,
 body {
   width: 100%;
@@ -42,8 +60,8 @@ body {
   justify-content: space-between;
 }
 
-.glow{
-  filter: drop-shadow(0 0 0.50rem royalblue);
+.glow {
+  filter: drop-shadow(0 0 0.5rem royalblue);
 }
 
 #container {
@@ -57,10 +75,6 @@ body {
   margin-top: 20px;
   padding: 50px;
   border: solid #f6f3f3 3px;
-}
-
-.no-blend {
-  mix-blend-mode: normal;
 }
 
 .introduction h1 {
@@ -86,6 +100,8 @@ main {
 
 .gallery-container {
   width: 100%;
+  overflow-y: scroll;
+  height: 1000px;
 }
 
 .gallery {
@@ -102,9 +118,79 @@ main {
   width: 100%;
   border: solid #f6f3f3 3px;
 }
+.commission-container {
+  /* background-color: black; */
+  width: 100%;
+  margin-top: 100px;
+}
 
+.commission-container h1 {
+  font-size: 4rem;
+}
 
+/* .commission-box {
+  margin-top: 30px;
+} */
 
+.commissions {
+  width: 65%;
+  justify-content: space-around;
+}
+
+.commission {
+  /* background-color: blue; */
+  border: solid #f6f3f3 3px;
+  padding: 20px;
+}
+
+.commission p {
+  font-size: 54px;
+}
+
+.commission button {
+  width: 100px;
+  background-color: transparent;
+  border: solid #f6f3f3;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 3;
+}
+
+.about-me {
+  width: 30%;
+  border: solid #f6f3f3 3px;
+  margin-left: 5%;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-me img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 0px -60px;
+  border-radius: 100%;
+}
+
+.about-desc {
+  margin: 25px 0px 25px 0px;
+}
+.about-me h3 {
+  font-size: 30px;
+}
+
+.about-me p {
+  font-size: 20px;
+}
+
+.about-me svg {
+  margin: 0px 10px 0px 10px;
+}
+
+footer { 
+    padding: 60px;
+}
 @media screen and (max-width: 700px) {
   .gallery {
     flex: 100%;
