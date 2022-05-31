@@ -1,4 +1,5 @@
 const images = [
+  "assets/Tak berjudul48_20220531143414.png",
   "assets/Tak_berjudul41_20220521085414.jpg",
   "assets/Tak_berjudul7_20220211115832.jpg",
   "assets/Chloe_20220405082729.jpg",
